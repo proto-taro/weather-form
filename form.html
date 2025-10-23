@@ -5,24 +5,22 @@
   <title>コンディションチェック</title>
   <style>
   body {
-  html, body {
+  display: block;
+}
+  body {
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 500px;
   display: block;
 }
-
   }
 
     .container {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 500px;
-      width: 100%;
-      margin: 0 auto;
-    }
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
     h2 {
       font-size: 24px;
@@ -153,8 +151,14 @@
       alert("回答を受け付けました。ありがとうございました！")
     })
   </script>
+  <script>
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  document.body.style.height = '600px';
+</script>
 </body>
 </html>
+
 
 
 
